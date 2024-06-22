@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            padding-right: 300px;
+            height: 100vh;
+            margin: 0;
+            background-repeat: no-repeat;
+        }
+        img{
+            width: 720px;
+            height: 100%;
+            padding-right: 130px;
+        }
+
+        .container {
+            position: relative;
+            width: 400px;
+            background-color:white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px (0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .form input {
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .form button {
+            padding: 12px;
+            background-color: #273462;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .form button:hover {
+            background-color: #273462;
+        }
+
+        .toggle {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .signup {
+            display: none;
+        }
+
+        .signup.active {
+            display: block;
+        }
+
+        .login.active {
+            display: none;
+        }
+
+        .message {
+            text-align: center;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .container.signup-mode {
+            transform: translateX(-140%);
+            background-color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <img src="https://th.bing.com/th/id/OIG1.SUSj2D7A9SBZmIGB3Vlb?pid=ImgGn">
+    <div class="container">
+        
+        <div class="login" id="loginForm">
+            <h2 style="color: #333;">Sign up</h2>
+            <form class="form">
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <input type="text" placeholder="Re-enter password" required>
+                <input type="text" placeholder="Phone number" required>
+                
+               
+                <button type="submit">Sign up</button>
+            </form>
+            <p class="message">Already registered? <a style="text-decoration: none;" href="login.html"> Login</a></p>
+        </div>
+        
+</body>
+</html>

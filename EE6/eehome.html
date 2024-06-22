@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Homepage</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<style>
+    /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+p{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+</style>
+<header>
+    <h1>VISULAIZING AQI AND WQI INDICES</h1>
+    <nav>
+        <ul>
+            <li><a href="eehome.html">Home</a></li>
+            <li><a href="eeaqi.html">Check AQI</a></li>
+            <li><a href="eelogin.html">Login</a></li>
+<li><a href="eesignin.html">Sign Up</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="main-content">
+    
+    <h2>Air Quality Index (AQI)</h2>
+    <p>The Air Quality Index (AQI) is a measure used to communicate how polluted the air currently is or how polluted it is forecast to become. It converts complex air quality data into a single number on a scale, making it easier to understand the air quality levels and their potential health impacts. Poor air quality impacts health in numerous ways. One of the most immediate effects is always on respiratory health. The elevated levels of pollutants are known to trigger or worsen conditions like asthma, bronchitis, allergic rhinitis, and obstructive pulmonary disease. The lower the air quality, the higher the number of emergency room visits that get logged in for people with such comorbidities.
+<br>
+<br>
+Delhi, Bengaluru, Mumbai, and Kolkata are prime examples of low air quality in India. The AQI in these cities jumps over 500 and is considered a hazardous condition wherein people are recommended to wear a mask outside of their homes. These levels tend to lead to issues like coughing, sneezing, and breathing in people who did not previously have such symptoms.A lot of people are unaware that air pollutants lead to cardiovascular diseases as well. The fine particulate matter in the air can infiltrate the bloodstream and affect blood vessels and, ultimately, the heart. Long-term exposure to air pollution increases the risk of strokes, heart attacks, and other cardiovascular issues. This is an even more serious issue for those with higher vulnerability to heart ailments, like senior citizens. 
+ <br>
+<br>Recently, it has also been noted that prolonged exposure to air pollutants may increase the risk of Alzheimer’s disease and other cognitive conditions. Air pollution not only harms the respiratory system, but also causes cardiovascular diseases. The fine particulate matter present in the air can enter the bloodstream and have a detrimental effect on blood vessels, ultimately leading to heart issues. Prolonged exposure to air pollution can significantly increase the risk of cardiovascular problems such as strokes, heart attacks, and more, especially in senior citizens who are more vulnerable to heart ailments. Moreover, research suggests that long-term exposure to air pollutants may also increase the risk of cognitive conditions like Alzheimer’s disease.
+    </p>
+    <img style="padding-left: 100px;" src="https://www.visualcapitalist.com/wp-content/uploads/2020/09/how-air-quality-works-share.png" alt="AQI Image" class="image-placeholder">
+    <h2>AIR QUALITY INDEX CALCULATION</h2>
+    <p>The Air Quality Index is based on measurement of particulate matter (PM2.5 and PM10), Ozone (O3), Nitrogen Dioxide (NO2), Sulfur Dioxide (SO2) and Carbon Monoxide (CO) emissions. 
+        Most of the stations on the map are monitoring both PM2.5 and PM10 data, but there are few exceptions where only PM10 is available.The AQI calculation involves determining the individual AQI for each pollutant and then selecting the highest value among them to represent the overall AQI for a specific area.
+         Here are the formulas for calculating the AQI for each pollutant. All measurements are based on hourly readings: For instance, an AQI reported at 8AM means that the measurement was done from 7AM to 8AM.
+        <br><br>Before delving into the formulas used for AQI calculation, let's understand the key components involved:
+
+        Pollutant Concentration: The concentration of individual pollutants is the primary data needed to calculate the AQI. These concentrations are measured in micrograms per cubic meter (µg/m³) for PM2.5, PM10, SO2, NO2, and in parts per million (ppm) for CO. Ozone (O3) is measured in parts per billion (ppb).
+        AQI Categories: To make AQI more accessible to the general public, it is divided into various categories, each representing a specific level of health concern. Commonly, there are six AQI categories: Good, Moderate, Unhealthy for Sensitive Groups, Unhealthy, Very Unhealthy, and Hazardous.</p>
+         <img style="padding-left: 400px;" src="https://metone.com/wp-content/uploads/2021/06/AQI-formula.png" alt="AQI Image" class="image-placeholder">
+        <br>
+        <br>
+        <p>The AQI is calculated by using a standardized rubric of concentrated air pollutant levels called the National Ambient Air Quality Standards. 
+            This rubric is reviewed by the EPA every five years. The AQI converts these calculations into number ranges (0–300 or more) that are then divided into color-coded levels of air hazard: green, yellow, orange, red, purple, or maroon. The higher the number and closer to maroon, the worse the air quality conditions and health risks. The EPA issues an air quality alert when pollutant concentrations are higher than 101 on the index, as this is the level at which people in sensitive groups—such as children, people with asthma, and those at risk of respiratory disease—begin to experience health hazards from poor air quality. Each level is accompanied by a description of the groups most likely to be affected and recommendations for limiting outdoor activities.
+<br>
+            AQI colors, values, and descriptions
+            <b>Green: 0–50</b>
+            <br>
+            “Air quality is satisfactory, and air pollution poses little or no risk.”
+            <br><br>
+            <b> Yellow: 51–100</b><br>
+            “Air quality is acceptable. However, there may be a risk for some people, particularly those who are unusually sensitive to air pollution.”
+            <br><br>
+            <b>Orange: 101–150</b><br>
+            “Members of sensitive groups may experience health effects. The general public is less likely to be affected.”
+            <br><br>
+            <b>Red: 151–200</b><br>
+            “Some members of the general public may experience health effects; members of sensitive groups may experience more serious health effects.”
+            <br><br>
+            <b>  Purple: 201–300 </b><br>
+            “Health alert: The risk of health effects is increased for everyone.”
+            <br><br>
+            <b>  Maroon: 301 and higher </b><br>
+            “Health warning of emergency conditions: everyone is more likely to be affected.”
+            <br><br>
+            High levels of air pollution can be extremely harmful to health, especially that of children, teens, people with asthma and other lung diseases, those over 65, those with diabetes or cardiovascular disease, and pregnant individuals. The EPA warns that poor air quality can be dangerous even for healthy and active adults under the age of 65. Chronic exposure to air pollution carries an increased risk of chronic diseases and cancer and has been listed as a human carcinogen by the World Health Organization (WHO).</p>
+         <br><br>
+         <img style="padding-left:400px;" src="https://qph.cf2.quoracdn.net/main-qimg-fddfe2e95c4c9f7deb32844eee8ff9a2">
+         <h2>RISKS RELATED TO PARTICULATE MATTER</h2>
+         <p>Particulate matter (PM), or airborne particles, includes dust, dirt, soot, and smoke. Some particles are directly emitted into the air by cars, trucks, buses factories, construction sites and wood burning to name a few examples. Other particles are formed in the air when gases from burning fuels react with sunlight and water vapor. Such gases, from incomplete combustion in motor vehicles, at power plants and in other industrial processes, contribute indirectly to particulate pollution. 
+            This pollution can cause chronic bronchitis, asthma attacks, decreased lung function, coughing, painful breathing, cardiac problems and heart attacks, as well as a variety of serious environmental impacts such as acidification of lakes and streams and nutrient depletion in soils and water bodies.
+        <br><br>
+        The size of particles is directly linked to their potential for causing health problems. Small particles less than 10 micrometers in diameter pose the greatest problems, because they can get deep into your lungs, and some may even get into your bloodstream.
+
+        Exposure to such particles can affect both your lungs and your heart. Numerous scientific studies have linked particle pollution exposure to a variety of problems, including:
+    
+    </p><p style="font-size: 30px;">    <ul>
+        <li>premature death in people with heart or lung disease</li>
+        <li> nonfatal heart attacks </li>
+            <li>    irregular heartbeat </li>
+                <li> aggravated asthma </li>
+                    <li>  decreased lung function </li>
+                        <li>   increased respiratory symptoms, such as irritation of the airways, coughing or difficulty breathing.</li>
+    </ul></p>
+       
+            <img style="padding-left:400px;" src="https://img.freepik.com/premium-vector/checking-air-quality-index-infographic-with-air-quality-index-earth-vector-illustration_647318-534.jpg">
+            <h2>Water Quality Index (WQI)</h2>
+    <p>The Water Quality Index (WQI) is a measure used to assess the quality of water in various bodies such as rivers, lakes, and streams. It considers several parameters including pH, dissolved oxygen, turbidity, and presence of pollutants to determine the overall quality of water. A higher WQI indicates better water quality. Water quality index (WQI) is an indicator of the quality of water. WQI relates a set of water quality parameters to a standard scale and combines them into a single number (Leščešen et al. Citation2015). WQI is one of the best tools for evaluating the quality of water resources such as the groundwater, lakes, and rivers (Anyachebelu et al. Citation2015). WQI is also a useful water quality monitoring tool to policymakers and environmentalists (Yogendra and Puttaiah Citation2008).
+        (Said et al. Citation2004, Sarkar and Abbasi Citation2006, Boyacioglu Citation2007, Avvannavar and Shrihari Citation2008, Gandaseca et al. Citation2011) have pointed out the existence of several versions of water quality indices in literature. <br>
+        <br> This is mainly due to the use of different number or combination of water quality parameters for developing the indices. (Meher et al. Citation2015) developed a water quality index for evaluating Gange's river water quality based on fourteen parameters (pH, electrical conductivity, dissolved oxygen, total dissolved solids, turbidity, salinity, major cations, major anions and alkalinity). (Al-Shujairi Citation2013) developed a water quality index for monitoring the water quality of Tigris and Euphrates rivers based only on seven paramters (total dissolved solids, total hardness, pH, dissolved oxygen, biological oxygen demand, nitrate and phosphate).
+        <br>
+        <img style="padding-left:200px;padding-top:50px;padding-bottom: 50px; height: 600px; width: 950px;" src="https://ars.els-cdn.com/content/image/1-s2.0-S1470160X20311572-gr1.jpg">
+           <br><br>
+        The Department of Environment of Malaysia (DOE) developed the National Water Quality Index (NWQI) for assessing water quality of Malaysian rivers. According to DOE, 36.6% of rivers in Malaysia were classified as slightly polluted, and 5.2% were classified as polluted in 2013. NWQI standard has been adopted in studies by (Aweng et al.
+        <br>
+        <br>  Citation2011, Isidore et al. Citation2013, Hossain et al. Citation2013, Suratman et al. Citation2015) to monitor the water quality of several rivers in Malaysia. The NWQI index uses the following parameters: pH, dissolved oxygen (DO), chemical oxygen demand (COD), biochemical oxygen demand (BOD), total dissolved solids (TSS), and ammonical nitrogen (NH3-N). 
+        The NWQI value ranges from 0 to 100 and is calculated based on sub-index values assigned to each parameter (DOE Citation2014).A monitored river can be classified into one of the five classes: I, II, III, IV, and V (in descending order of water quality, where Class I being the ‘best’ and Class V being the ‘worst’ water quality).
+    </p>
+    <br>
+    <br>
+    <img style="padding-left: 500px; height: 400px; width: 450px;" src="https://image1.slideserve.com/3272449/wqi-interpretation-l.jpg" alt="WQI Image" class="image-placeholder">
+
+    <p>Water is a crucial component of the environment but surface water and groundwater quality have long been deteriorating due to both natural and human-related activities. Natural factors that influence water quality are hydrological, atmospheric, climatic, topographical and lithological factors (Magesh et al., 2013, Uddinet al., 2018). Examples of anthropogenic activities that adversely affect water quality are mining, livestock farming, production and disposal of waste (industrial, municipal and agricultural), increased sediment run-off or soil erosion due to land-use change (Lobato et al., 2015) and heavy metal pollution (Sánchez et al., 2007).
+
+
+    In recent times, developing countries have faced significant problems in protecting water quality when trying to improve water supply and sanitation (Carvalhoet al., 2011, Debels et al., 2005, Kannelet al., 2007, Ortegaet al., 2016). Even developed nations have been fighting to maintain or improve the status of their water quality in the face of problems such as nutrient enrichment and eutrophication of water resources (Abbasi and Abbasi, 2012, Debels et al., 2005) and the provision of water and wastewater services to increasing populations.
+    <br><br>
+    Management of water quality requires the collection and analysis of large water quality datasets that can be difficult to evaluate and synthesise. A range of tools have been developed to evaluate water quality data; the Water Quality Index (WQI) model is one such tool. WQI models are based on an aggregation functions which allow analysis of large temporally and spatially-varying water quality datasets to produce a single value, i.e. the water quality index, that indicates the quality of the waterbody. They are attractive to water management/supply agencies as they are relatively easy to use and convert complex water quality datasets into a single value measure of water quality that is easy to understand.
+     <img style="padding-left:200px;padding-top:50px;padding-bottom: 50px; height: 400px; width: 950px;" src="https://ars.els-cdn.com/content/image/1-s2.0-S1470160X20311572-gr5.jpg">
+         <br>
+    A WQI typically comprises four processes or components. First, the water quality parameters of interest are selected. Second, the water quality data are read and for each water quality parameter the concentrations are converted to a single-value dimensionless sub-index. Third, the weighting factor for each water quality parameter is determined and fourth, a final single value water quality index is calculated by an aggregation function using the sub-indices and weighting factors for all water quality parameters. Many different WQI models have been developed with variations in model structure, the parameters included and their associated weightings, and the methods used for sub-indexing and aggregation (Debels et al., 2005, Jha et al., 2015, Kannelet al., 2007, Sunet al., 2016). Most of the WQI model components have been developed based on expert views and local guidelines (Hsu and Sandford, 2007, Sutadian et al., 2016) and many models are therefore region-specific. Many researchers refer to the uncertainty problems of WQI models (Kannelet al., 2007). While uncertainty is an unavoidable in any mathematical model (Lowe et al., 2017), all four stages of the WQI can contribute to the model uncertainty.
+    <br>
+    <br>
+    The primary aim of this paper was to critically review the most commonly used WQI models and determine which were the most accurate. This involved a review of 110 published manuscripts from which we identified 21 WQI models used globally (see Fig. 1), which were then individually and comparatively assessed. The review identified seven basic WQI models from which most other WQI models have been developed; these were subjected to a more thorough critical analysis. Section 2 of the paper presents a brief history of WQI model development. Section 3 presents an overview of the basic structure of WQI models and describes in detail the four major structural elements of most models, namely, (1) parameterisation, (2) parameter sub-indexing, (3) parameter weighting and (4) index aggregation. Section 4 describes the seven primary WQI models in detail while Section 5 presents and discusses the major findings of the review. Finally, Section 7 presents the main conclusions from the research.</p>
+</section>
+
+
+
+</body>
+</html>
